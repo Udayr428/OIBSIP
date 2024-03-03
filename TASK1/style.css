@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #5c48ee;
+  --primary-color: #15F5BA;
   --primary-color-dark: #0f1e6a;
   --secondary-color: #f9fafe;
   --text-color: #333333;
   --white: #ffffff;
   --max-width: 1200px;
+}
+
+/* Utilities */
+.section-heading{
+  font-size: 1.5em;
 }
 
 * {
@@ -28,6 +33,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* position: fixed; */
 }
 
 .nav__logo a {
@@ -184,6 +190,62 @@ nav {
 .image__content li {
   margin-bottom: 0.5rem;
 }
+
+/* About Section */
+.section{
+  /* background: cyan; */
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+
+}
+.about-sec{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* padding: 1em; */
+  height: 100%;
+}
+.about-description{
+  margin-top: 5em;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+/* Service Section */
+.service-sec{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services{
+  height: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  text-align: center;
+}
+.services img{
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+.service{
+  margin-top: 1em;
+  font-size: 20px;
+}
+
 
 @media (width < 900px) {
   .link a:not(.nav__btn) {
